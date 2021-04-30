@@ -307,8 +307,11 @@
     }
 }
 @media only screen and (max-width: 440px) {
-    #rules-btn {
-      top: calc(100vh - 85px);      
+    #rules-btn, .game-buttons {
+      top: calc(100vh - 70px);      
+    }
+    #moves {
+      top: calc(100vh - 90px); 
     }
 }
 @media only screen and (min-width: 780px) {
@@ -316,7 +319,13 @@
       top: calc(100vh - 80px);
     }
 }
-@media (width: 320px) {
+@media only screen and (max-width: 440px) {
+  #rules-btn, .game-buttons {
+      top: calc(100vh - 90px);      
+    }
+    #moves {
+      top: calc(100vh - 105px); 
+    }
   body {
     height: 120vh;
   }

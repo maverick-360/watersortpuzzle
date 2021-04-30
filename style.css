@@ -308,7 +308,7 @@
 }
 @media only screen and (max-width: 440px) {
     #rules-btn, .game-buttons {
-      top: calc(100vh - 70px);      
+      top: calc(100vh - 75px);      
     }
     #moves {
       top: calc(100vh - 90px); 
@@ -316,7 +316,7 @@
 }
 @media only screen and (min-width: 780px) {
     #moves {
-      top: calc(100vh - 70px);
+      top: calc(100vh - 80px);
     }
 }
 @media (width: 320px) {

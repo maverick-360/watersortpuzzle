@@ -150,7 +150,7 @@ window.Clicked = function (x) {
             let el = document.getElementsByClassName("test-tube")[clicked[0]];
             el.style.transform = "scale(1) rotate(0deg)";
             if (clicked[0] != clicked[1]) {
-                el.style.transition = "0.8s linear";
+                el.style.transition = "1s linear";
                 moves++;
                 document.getElementById("moves").innerHTML = "Moves: " + moves;
                 Transfer(...clicked);

@@ -78,20 +78,20 @@
     text-align: center;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 #menu {
     position: absolute;
     margin-top: 0;
     left: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     overflow-x: hidden;
 }
 #level {
     z-index: 1;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -114,7 +114,7 @@
 }
 #particles-js {
     background: rgb(115, 187, 255);
-    height: 100vh;
+    height: 90vh;
 }
 .test-tube {
     position: absolute;
@@ -178,7 +178,7 @@
 
 .game-buttons {
     position: fixed;
-    top: calc(100vh - 50px);
+    top: calc(90vh - 50px);
     height: 50px;
     width: 150px;
     font-size: 25px;
@@ -208,7 +208,7 @@
     border: 1px solid #5680ff;
     background: rgb(0, 255, 255);
     position: fixed;
-    top: calc(100vh - 80px);
+    top: calc(90vh - 80px);
     width: 150px;
     height: 30px;
     left: 0;
@@ -219,7 +219,7 @@
 #rules-btn {
     position: fixed;
     left: calc(100vw - 200px);
-    top: calc(100vh - 50px);
+    top: calc(90vh - 60px);
     height: 50px;
     width: 200px;
     background-color: lightgreen;
@@ -235,7 +235,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
@@ -247,7 +247,7 @@
     position: absolute;
     top: 100px;
     left: 50px;
-    height: calc(100vh - 200px);
+    height: calc(90vh - 200px);
     width: calc(100vw - 100px);
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
@@ -270,7 +270,7 @@
     left: 5%;
     width: 90%;
     font-size: 20px;
-    height: calc(100vh - 200px - 150px);
+    height: calc(90vh - 200px - 150px);
     overflow-x: hidden;
 }
 
@@ -289,4 +289,9 @@
 
 #alert-button:hover {
     background-color: rgb(150,255,150);
+}
+.credit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

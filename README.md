@@ -1,4 +1,4 @@
-# watersortpuzzle
+# Water Sort Puzzle Game
 I made a clone of Water Sort Puzzle, an app which I downloaded from Google Play Store.
 
 # Responsiveness

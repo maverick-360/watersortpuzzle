@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Sort Puzzle</title>
+    <link href="http://fonts.cdnfonts.com/css/water-splash" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js">
+        <div id="game">
+            <div id="menu">
+                <div id="menu-heading">WATER SORT PUZZLE</div>
+                <div id="cr1" class="credit">Developed by Soumavo Dey</div>
+                <h3 style="font-family: 'New Tegomin', serif;">Choose Difficulty Level: </h3>
+                <br>
+                <button class="btn" id="easy" onclick="OpenLevel(0);">
+                    <span>EASY</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button class="btn" id="medium" onclick="OpenLevel(1);">
+                    <span>MEDIUM</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button class="btn" id="hard" onclick="OpenLevel(2);">
+                    <span>HARD</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button class="btn" id="very-hard" onclick="OpenLevel(3)">
+                    <span>VERY HARD</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button class="btn" id="impossible" onclick="OpenLevel(7);">
+                    <span>IMPOSSIBLE</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <button class="btn" id="rules-btn" onclick="ShowRules();">
+                    <span>RULES</span>
+                    <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                        <g clip-path="url(#clip)" filter="url(#goo-big)">
+                            <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                            <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                            <circle class="top-right" cx="104" cy="6.5" r="27" />
+                            <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                            <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip">
+                                <rect width="132" height="45" rx="7" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <svg width="0" height="0">
+                    <defs>
+                        <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                        <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                            color-interpolation-filters="sRGB">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+                                result="cm" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <div id="level"></div>
+            <div id="rules-page">
+                <div id="rules">
+                    <div id="rules-heading">RULES</div>
+                    <div id="rules-text">There will be some glasses (or test tubes), your task is to
+                        put
+                        the
+                        liquids with same color together! You can transfer different colored water from one glass to
+                        another
+                        only if the other glass is empty or its top most layer of water is of the same color as that
+                        of
+                        the one
+                        from which water is to be taken. The glass you have selected will be highlighted to prevent
+                        confusion.
+                        Restart button will take you back to the beginning of the level, also every time you open
+                        the
+                        same level
+                        the water will be shuffled.
+                    </div>
+                    <button class="btn" id="back" onclick="HideRules();">
+                        <span>BACK</span>
+                        <svg preserveAspectRatio="none" viewBox="0 0 132 45">
+                            <g clip-path="url(#clip)" filter="url(#goo-big)">
+                                <circle class="top-left" cx="49.5" cy="-0.5" r="26.5" />
+                                <circle class="middle-bottom" cx="70.5" cy="40.5" r="26.5" />
+                                <circle class="top-right" cx="104" cy="6.5" r="27" />
+                                <circle class="right-bottom" cx="123.5" cy="36.5" r="26.5" />
+                                <circle class="left-bottom" cx="16.5" cy="28" r="30" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip">
+                                    <rect width="132" height="45" rx="7" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <svg width="0" height="0">
+                        <defs>
+                            <filter id="goo" x="-50%" width="200%" y="-50%" height="200%"
+                                color-interpolation-filters="sRGB">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" result="cm" />
+                            </filter>
+                            <filter id="goo-light" x="-50%" width="200%" y="-50%" height="200%"
+                                color-interpolation-filters="sRGB">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="1.25" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" result="cm" />
+                            </filter>
+                            <filter id="goo-big" x="-50%" width="200%" y="-50%" height="200%"
+                                color-interpolation-filters="sRGB">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" result="cm" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div id="cr2" class="credit">Developed by Soumavo Dey</div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/particles.min.js">
+    </script>
+    <script src="js/app.js">
+    </script>
+
+</body>
+
+</html>

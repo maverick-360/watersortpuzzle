@@ -1,10 +1,10 @@
 # watersortpuzzle
 I made a clone of Water Sort Puzzle, an app which I downloaded from Google Play Store.
 
-#Responsiveness
+# Responsiveness
 This web-app is fully functional in any device of any screen size (Tested). No rendering errors or visual issues can be noticed.
 
-#Developer Contact
+# Developer Contact
 You can contact me through -
 <h4><a href="https://instagram.com/baba.cazzanando">Instagram<a><h4>
  <br>
